@@ -1,0 +1,151 @@
+/* General Rule
+1. Color
+
+Primary
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+Neutral
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+2. Typography
+Font size (paragraph): 16px
+Font family: Red Hat Display
+Font Weights: 500, 700, 900 */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url(/out/assets/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+/* General Component */
+main h1,
+main .description,
+main .price-card,
+main .btn {
+  margin-bottom: 2rem;
+}
+
+main h1,
+main .price-component h2 {
+  color: hsl(223, 47%, 23%);
+  font: 900 2.2rem "Red Hat Display";
+}
+
+main .price-component h2,
+main .price-component .price {
+  height: 1.6rem;
+  font-size: 1.4rem;
+
+  margin-bottom: 0.6rem;
+}
+
+main .price-card .change-option,
+main .btn {
+  cursor: pointer;
+  font: 900 1.4rem "Red Hat Display";
+}
+
+main .btn {
+  max-width: 27.8rem;
+  text-decoration: none;
+  border-radius: 1rem;
+
+  display: block;
+  padding: 1rem;
+}
+
+/* Main */
+main {
+  width: 35rem;
+  height: 57rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  text-align: center;
+
+  margin: 3rem auto;
+}
+
+main img {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+main section {
+  padding: 3.6rem;
+}
+
+main .description {
+  color: hsl(224, 23%, 55%);
+  font: 500 1.3rem "Red Hat Display";
+  line-height: 1.5;
+}
+
+main .price-card {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+main .price-component {
+  text-align: left;
+  height: 4rem;
+
+  margin-left: -3.6rem;
+}
+
+main .price-component .price {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+main .price-card .change-option {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+main .price-card .change-option:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+main .proceed-btn {
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 1rem 2rem rgba(56, 41, 224, 0.4);
+}
+
+main .proceed-btn:hover {
+  opacity: 0.6;
+}
+
+main .cancel-btn {
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 0;
+}
+
+main .cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
